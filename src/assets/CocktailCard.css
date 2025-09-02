@@ -1,0 +1,5 @@
+.cocktail-card {
+  display: flex;
+  flex-direction: column;
+  background-color: chartreuse;
+}
