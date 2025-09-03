@@ -1,7 +1,13 @@
-import './assets/RandomButton.css'
+import '../assets/RandomButton.css'
 
-export const RandomButton = () => {
+interface RandomButtonProps {
+    onClick: () => void;
+}
+export const RandomButton = ({onClick}: RandomButtonProps) => {
+    
+    
+    
     return (
-        <button>Nah.. another one</button>
+        <button onClick={onClick}>Nah.. another one</button>
     )
 }

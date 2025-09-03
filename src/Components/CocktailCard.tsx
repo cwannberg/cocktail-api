@@ -1,4 +1,4 @@
-import './assets/CocktailCard.css'
+import '../assets/CocktailCard.css'
 import type { ICocktail } from './Cocktail';
 
 interface ICocktailCardProps {
