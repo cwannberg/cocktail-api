@@ -4,8 +4,8 @@ export const Header = () => {
     return (
         <>
         <header>
-            <h1>Hey Bartender! Gimme a</h1>
-            <p>RANDOM DRINKNAME</p>
+            <p>Hey Bartender! Gimme a</p>
+            <h1>RANDOM DRINKNAME</h1>
           </header>
         </>
     )}

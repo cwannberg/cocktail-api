@@ -2,6 +2,8 @@ import './assets/App.css'
 import { CocktailCard } from './CocktailCard'
 import { Header } from './Header'
 import { RandomButton } from './RandomButton'
+import { FetchCocktail } from './RandomCocktail'
+
 function App() {
 
   return (
