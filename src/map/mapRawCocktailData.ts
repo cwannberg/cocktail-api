@@ -7,7 +7,7 @@
  * you won’t need.
  */
 
-import type { ICocktail } from '../Cocktail.tsx';
+import type { ICocktail } from '../Components/Cocktail.tsx';
 
 export function mapRawCocktailData(rawCocktail: any): ICocktail {
   return {

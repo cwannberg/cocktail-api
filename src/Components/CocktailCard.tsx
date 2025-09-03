@@ -1,15 +1,11 @@
-import { useEffect, useState } from 'react';
 import './assets/CocktailCard.css'
-import { FetchCocktail } from './RandomCocktail';
 import type { ICocktail } from './Cocktail';
 
-export const CocktailCard = () => {
-    const [cocktail, setCocktail] = useState<ICocktail | null>(null);
+interface ICocktailCardProps {
+    cocktail?: ICocktail;
+}
 
-    useEffect(() => {
-       FetchCocktail().then((c => setCocktail(c)));
-    },[]);
-
+export const CocktailCard = ({cocktail}: ICocktailCardProps) => {
 
     return(
     <>

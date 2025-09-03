@@ -1,11 +1,15 @@
 import './assets/Header.css'
 
-export const Header = () => {
+interface IHeaderProps {
+  cocktailName?: string;
+}
+
+export const Header = (props: IHeaderProps) => {
     return (
         <>
         <header>
             <p>Hey Bartender! Gimme a</p>
-            <h1>RANDOM DRINKNAME</h1>
+            <h1>{props.cocktailName}</h1>
           </header>
         </>
     )}
