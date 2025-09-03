@@ -12,7 +12,7 @@ export const CocktailCard = ({cocktail}: ICocktailCardProps) => {
         <section className="cocktail-card">
             <h2>{cocktail?.name}</h2>
             <figure>
-                <img src="https://www.thecocktaildb.com/images/media/drink/vrwquq1478252802.jpg/medium"/>
+                <img src={cocktail?.thumbnail}/>
             </figure>
             <div className="see-more-box">
                 <a href="./">See more</a>

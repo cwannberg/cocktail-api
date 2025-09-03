@@ -14,11 +14,9 @@ function App() {
   const fetchNewCocktail = () => {
     FetchCocktail().then(c => setCocktail(c));
   };
-
   useEffect(() => {
     fetchNewCocktail();
   },[]);
-  
   
   return (
     <>
