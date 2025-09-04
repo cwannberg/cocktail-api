@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import '../assets/CocktailCard.css'
 import type { ICocktail } from './Cocktail';
 
@@ -15,7 +16,7 @@ export const CocktailCard = ({cocktail}: ICocktailCardProps) => {
                 <img src={cocktail?.thumbnail}/>
             </figure>
             <div className="see-more-box">
-                <a href="./">See more</a>
+                <Link to={'/cocktailInfo'}>See more</Link>  
                 </div>
         </section>  
     </>
