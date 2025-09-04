@@ -2,28 +2,35 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    background-color: chartreuse;
+    background-color: #e49ea6;
     padding: 20px;
     border: 2px solid black;
     border-radius: 20px;
     margin-top: 1rem;
     overflow: hidden;
+    min-width: 500px;
 }
+
 h2 {
     text-align: center;
     margin-bottom: 20px;
+    font-size: 3em;
+    font-family: "Luckiest Guy", cursive;;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .see-more-box {
     position: absolute;
     bottom: 3rem;
     right: 3rem;
-    background-color: white;
+    background-color: #ab6669;
     padding: 10px;
     border: 1px solid black;
     text-decoration: none;
     opacity: 0.9;
 }
+
 .see-more-box a{
     text-decoration: none;
     color: black;
@@ -31,7 +38,13 @@ h2 {
     font-size: 1.2rem;
 }
 
-img {
-    height: 280px;
+figure {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+figure img {
+    height: 400px;
     width: auto;
 }

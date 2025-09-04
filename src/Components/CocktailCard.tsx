@@ -17,7 +17,7 @@ export const CocktailCard = ({cocktail}: ICocktailCardProps) => {
             </figure>
             <div className="see-more-box">
                 <Link to={'/cocktailInfo'}>See more</Link>  
-                </div>
+            </div>
         </section>  
     </>
 )

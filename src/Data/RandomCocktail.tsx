@@ -1,5 +1,5 @@
-import type { ICocktail } from './Components/Cocktail.tsx';
-import { mapRawCocktailData } from './map/mapRawCocktailData.ts';
+import type { ICocktail } from '../Components/Cocktail.tsx';
+import { mapRawCocktailData } from '../map/mapRawCocktailData.ts';
 
 export const FetchCocktail = async (): Promise<ICocktail> => {
     const res = await fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php')

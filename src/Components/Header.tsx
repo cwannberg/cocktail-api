@@ -8,8 +8,8 @@ export const Header = (props: IHeaderProps) => {
     return (
         <>
         <header>
-            <p>Hey Bartender! Gimme a</p>
-            <h1>{props.cocktailName}</h1>
-          </header>
+            <h1>Hey Bartender!</h1>
+            <p>Gimme a</p>
+        </header>
         </>
     )}

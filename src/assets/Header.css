@@ -1,10 +1,27 @@
 header {
-    background-color: blueviolet;
+    background-image: url('/header_bg.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 1rem;
-    color: white;
-    height: 3rem;
+    color: #262D0C;
+    height: 12rem;
+    gap: 3rem;
 }
+header h1 {
+    font-size: 4em;
+    font-family: "Luckiest Guy", cursive;;
+    font-weight: 400;
+    font-style: normal;
+}
+header p {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+}
+

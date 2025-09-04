@@ -1,9 +1,17 @@
 button {
-    background-color: yellow;
+    background-color: #ab6669;
     padding: 10px;
     font-size: 1rem;
     border: 1px solid black;
     border-radius: 10px;
     cursor: pointer;
     margin-top: 0.5rem;
+}
+button:hover {
+  background: linear-gradient(135deg, #ff758c, #ff7eb3); 
+  box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+}
+
+button:active {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
 }
