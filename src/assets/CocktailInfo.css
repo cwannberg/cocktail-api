@@ -1,0 +1,20 @@
+.cocktail-info-page {
+    display: flex;
+    align-items: center;
+    background-color: #6e0e17;
+    height: 100vh;
+    align-items: center;
+}
+
+.recipe-box {
+    width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+.ingredients-list {
+    flex: 1;
+}
+.instructions {
+    flex: 1;
+}

@@ -7,7 +7,6 @@ function App() {
   return (
     <>
         <main>
-          {/* <Header cocktailName = {cocktail?.name}/> */}
           <Header></Header>
           <Outlet/>
         </main>

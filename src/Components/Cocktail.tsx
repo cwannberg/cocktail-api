@@ -1,4 +1,4 @@
-import type { IIngredient } from '../Data/Ingredients.tsx';
+import type { IIngredients } from '../Data/Ingredients.tsx';
 
 export interface ICocktail {
   id: string;
@@ -9,5 +9,5 @@ export interface ICocktail {
   glass: string;
   instructions: string;
   thumbnail: string;
-  ingredients: IIngredient[];
+  ingredients: IIngredients[];
 }

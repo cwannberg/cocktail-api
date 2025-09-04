@@ -1,5 +1,5 @@
 import { createRoot } from 'react-dom/client'
-import { BrowserRouter, Route, Routes } from 'react-router'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './assets/index.css'
 import App from './Components/App.tsx'
 import { CocktailInfo } from './Views/CocktailInfo.tsx'
