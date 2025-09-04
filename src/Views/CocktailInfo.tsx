@@ -9,20 +9,26 @@ export const CocktailInfo = (): ReactElement => {
     return( 
     <>
         <section className="cocktail-info-page">
-            <section className="recipe-box">
-                <h1>{cocktail?.name}</h1>
-                <figure>
-                    <img src={cocktail?.thumbnail}/>
-                </figure>
-                <section className="ingredients-list">
-                    <ul>
-                        <li>Gurka</li>
-                        <li>Majonnäs</li>
-                    </ul>
+            <section className="recipe-wrapper">
+                <section className="recipe-container">
+                    <figure className="recipe-img">
+                        <img className="cocktail-thumb" src={cocktail?.thumbnail}/>
+                    </figure>
+                    <div className="h1-wrapper">
+                        <h1>{cocktail?.name}</h1>
+                    </div>
                 </section>
-                <section className="instructons">
-                    <p>Mosa gurkan och blanda med majonnäsen</p>
-                </section>
+                <article className="instruction-and-ingredients">
+                    <section className="ingredients-list">
+                        <ul>
+                            <li>Gurka</li>
+                            <li>Majonnäs</li>
+                        </ul>
+                    </section>
+                    <section className="instructions">
+                        <p>Mosa gurkan och blanda med majonnäsen</p>
+                    </section>
+                </article>
             </section>
         </section>
     </>

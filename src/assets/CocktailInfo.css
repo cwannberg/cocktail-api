@@ -1,20 +1,61 @@
 .cocktail-info-page {
     display: flex;
+    flex-direction: column;
     align-items: center;
     background-color: #6e0e17;
     height: 100vh;
     align-items: center;
 }
+.h1-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    width: 100%;
+}
+.h1-wrapper h1 {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em; 
+    text-align: center;
+}
 
-.recipe-box {
-    width: 500px;
-    height: auto;
+.recipe-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #e49ea6;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-top: 1rem;
+    min-width: 500px;
+    gap: 1rem;
+}
+.recipe-container {
     display: flex;
     flex-direction: row;
+}
+.instruction-and-ingredients {
+    display: flex;
+    flex-direction: row;
+}
+.recipe-img {
+    display: flex;
+    justify-content: center; 
+    flex: 1;
+}
+
+.recipe-img .cocktail-thumb {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
 }
 .ingredients-list {
     flex: 1;
 }
+
 .instructions {
     flex: 1;
 }
