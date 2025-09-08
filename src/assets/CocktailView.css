@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #6e0e17;
+    background-color: black;
     height: 100vh;
     align-items: center;
 }
@@ -22,16 +22,16 @@
 }
 
 .recipe-wrapper {
-    position: relative;
     display: flex;
     flex-direction: column;
     background-color: #e49ea6;
     padding: 20px;
     border: 2px solid black;
     border-radius: 20px;
-    margin-top: 1rem;
-    min-width: 500px;
     gap: 1rem;
+    margin: 2rem;
+    margin-top: 1rem;
+    height: 100%;
 }
 .recipe-container {
     display: flex;

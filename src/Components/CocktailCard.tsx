@@ -16,7 +16,7 @@ export const CocktailCard = ({cocktail}: ICocktailCardProps) => {
                 <img src={cocktail?.thumbnail}/>
             </figure>
             <div className="see-more-box">
-                <Link to={'/cocktailInfo'} state={{cocktail}}>See more</Link>  
+                <Link to={'/cocktailView'} state={{cocktail}}>See more</Link>  
             </div>
         </section>  
     </>

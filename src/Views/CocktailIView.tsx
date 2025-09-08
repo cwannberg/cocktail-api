@@ -1,8 +1,9 @@
 import type { ReactElement } from "react"
-import '../assets/CocktailInfo.css'
+import '../assets/CocktailView.css'
 import { useLocation } from 'react-router-dom';
+import { IngredientsList} from '../Components/Ingredients';
 
-export const CocktailInfo = (): ReactElement => {
+export const CocktailView = (): ReactElement => {
     const cocktail = useLocation().state?.cocktail;
 
     console.log({cocktail});
@@ -20,13 +21,12 @@ export const CocktailInfo = (): ReactElement => {
                 </section>
                 <article className="instruction-and-ingredients">
                     <section className="ingredients-list">
-                        <ul>
-                            <li>Gurka</li>
-                            <li>Majonnäs</li>
-                        </ul>
+                        <h3>Ingredients</h3>
+                        <IngredientsList cocktail={cocktail}/>
+                        <p>Prefered glass: {cocktail?.glass}</p>
                     </section>
                     <section className="instructions">
-                        <p>Mosa gurkan och blanda med majonnäsen</p>
+                        <p>{cocktail?.instructions}</p>
                     </section>
                 </article>
             </section>
