@@ -1,5 +1,5 @@
 .search-page {
-    background-color: aqua;
+    background-color: white;
     height: 100%;
     width: 100%;
     display:flex;
@@ -12,16 +12,16 @@
 .search-form {
   display: flex;
   align-self: center;
-  background: blue;
+  background: transparent;
   padding: 4px;
   border-radius: 5px; 
   width: 50%;
   height: 1rem;
 }
 .search-form input {
-  border: none;  
+  border: 1px solid black;  
   outline: none;    
-  background: pink;       
+  background: white;       
   padding: 0.5rem;
   font-size: 1rem;
   width: 100%;
