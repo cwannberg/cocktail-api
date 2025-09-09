@@ -7,7 +7,7 @@ export interface ICocktail {
   glass: string;
   instructions: string;
   thumbnail: string;
-    ingredients: {
+  ingredients: {
     ingredient: string;
     measure: string | null;
   }[];

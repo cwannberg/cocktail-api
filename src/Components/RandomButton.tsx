@@ -1,4 +1,4 @@
-import '../assets/RandomButton.css'
+import '../assets/Button.css'
 
 interface RandomButtonProps {
     onClick: () => void;

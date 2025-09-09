@@ -7,7 +7,7 @@ function App() {
   return (
     <>
         <main>
-          <Header></Header>
+          <Header/>
           <Outlet/>
         </main>
     </>

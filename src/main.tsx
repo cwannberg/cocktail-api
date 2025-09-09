@@ -4,6 +4,7 @@ import './assets/index.css'
 import App from './Components/App.tsx'
 import { CocktailView } from './Views/CocktailIView.tsx'
 import { HomeView } from './Views/Homeview.tsx'
+import { SearchView } from './Views/SearchView.tsx'
 
 createRoot(document.getElementById('root')!).render(
     <BrowserRouter>
@@ -11,6 +12,7 @@ createRoot(document.getElementById('root')!).render(
             <Route path="/" element={<App/>}>
                 <Route path="/cocktailView" element={<CocktailView/>}/>
                 <Route path="/" element={<HomeView/>}/>
+                <Route path="/searchView" element={<SearchView/>}/>
             </Route>
         </Routes>
     </BrowserRouter>
