@@ -2,17 +2,16 @@ import { useEffect, useState, type FormEvent, type ReactElement } from 'react'
 import '../assets/Search.css'
 import { FetchCocktail } from "../Data/FetchCocktail";
 import type { ICocktail } from '../Components/Cocktail';
+import { Pagination } from '../Components/Pagination';
 
 
-export const SearchView = (): ReactElement => {
+export const SearchView = (userInput): ReactElement => {
     const [userInput, setUserInput] = useState('');
     const [cocktails, setCocktails] = useState<ICocktail[]>([]);
 
           const fetchNewCocktail = (userInput2:string) => {
             FetchCocktail(userInput2).then(c => setCocktails(c));
-            console.log("userinput " + userInput2);
             cocktails.forEach(function(c:any) {
-                console.log("fetchNewCocktail: " + c.name)
             });
           };
           useEffect(() => {
@@ -30,12 +29,8 @@ export const SearchView = (): ReactElement => {
                 <button className="material-symbols-outlined" type="submit">search</button>
             </form>
             <article className="search-result-box">
-                <h3>Search result</h3>
-                <ul>
-                    {cocktails.slice(0, 10).map(c => (
-                    <li key={c.id}>{c.name}</li>
-                ))}
-                </ul>
+                <h3>Search result:</h3>
+            <   Pagination items={cocktails}/>
             </article>
         </section>
     )}

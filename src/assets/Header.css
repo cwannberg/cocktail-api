@@ -13,6 +13,11 @@ header {
     gap: 3rem;
     position:relative;
 }
+.header-link {
+    display: block;
+    text-decoration: none; 
+    color: inherit;
+}
 header h1 {
     font-size: 4em;
     font-family: "Luckiest Guy", cursive;;
