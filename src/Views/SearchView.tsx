@@ -5,7 +5,7 @@ import type { ICocktail } from '../Components/Cocktail';
 import { Pagination } from '../Components/Pagination';
 
 
-export const SearchView = (userInput): ReactElement => {
+export const SearchView = (): ReactElement => {
     const [userInput, setUserInput] = useState('');
     const [cocktails, setCocktails] = useState<ICocktail[]>([]);
 

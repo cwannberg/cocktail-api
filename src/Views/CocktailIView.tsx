@@ -12,12 +12,12 @@ export const CocktailView = (): ReactElement => {
         <section className="cocktail-info-page">
             <section className="recipe-wrapper">
                 <section className="recipe-container">
-                    <figure className="recipe-img">
-                        <img className="cocktail-thumb" src={cocktail?.thumbnail}/>
-                    </figure>
                     <div className="h1-wrapper">
                         <h1>{cocktail?.name}</h1>
                     </div>
+                    <figure className="recipe-img">
+                        <img className="cocktail-thumb" src={cocktail?.thumbnail}/>
+                    </figure>
                 </section>
                 <article className="instruction-and-ingredients">
                     <section className="ingredients-list">

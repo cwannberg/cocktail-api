@@ -5,7 +5,7 @@ import { SearchView } from "../Views/SearchView"
 export const SearchComponent = () : ReactElement => {
     const [userInput, setUserInput] = useState("");
     function handleSearch(event: FormEvent<HTMLFormElement>): void {
-        SearchView(userInput);
+
     }
 
     return (

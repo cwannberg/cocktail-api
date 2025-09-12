@@ -3,23 +3,24 @@
     flex-direction: column;
     align-items: center;
     background-color: white;
-    height: 100vh;
-    align-items: center;
+    min-height: 100vh;
+    padding: 1rem;
 }
+
+
 .h1-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex: 1;
     width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
 }
+
 .h1-wrapper h1 {
     font-family: "Pacifico", cursive;
     font-weight: 400;
     font-style: normal;
     font-size: 2em; 
-    text-align: center;
 }
+
 
 .recipe-wrapper {
     display: flex;
@@ -27,34 +28,42 @@
     background-color: white;
     padding: 20px;
     border-radius: 20px;
-    gap: 1rem;
-    margin: 2rem;
-    margin-top: 1rem;
-    height: 100%;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 900px;
 }
-.recipe-container {
-    display: flex;
-    flex-direction: row;
-}
-.instruction-and-ingredients {
-    display: flex;
-    flex-direction: row;
-}
+
 .recipe-img {
     display: flex;
     justify-content: center; 
-    flex: 1;
 }
 
 .recipe-img .cocktail-thumb {
-    max-width: 200px;
+    max-width: 300px;
     width: 100%;
     height: auto;
+    border-radius: 10px;
 }
-.ingredients-list {
+
+.instruction-and-ingredients {
+    display: flex;
+    flex-direction: column; 
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.ingredients-list,
+.instructions {
     flex: 1;
 }
 
-.instructions {
-    flex: 1;
+@media (min-width: 768px) {
+    .instruction-and-ingredients {
+        flex-direction: row; 
+    }
+
+    .ingredients-list,
+    .instructions {
+        flex: 1;
+    }
 }
